@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: Microsoft Yahei, sans-serif, Arial;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .bg {
+            height: 30px;
+            width: 300px;
+            margin-left: 300px;
+            background: #ccc;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-colorpicker.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-colorpicker.js"></script>
+    <script type="text/javascript" src="js/eqdColorpicker.js"></script>
+    <!--<script type="text/javascript" src="js/colorpicker.tpl.js"></script>-->
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+    <input class="bg" eqd-colorpicker="rgba" ng-model="selectColor1" select-color='selectColor1' default-color='{{defaultColor1}}' offset-top="50" offset-left="300"/>
+</body>
+</html>

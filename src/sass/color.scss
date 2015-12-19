@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.eqc-colorpicker {
+    position: fixed;
+    height: 534px;
+    // height: 241px;
+    padding: 10px 10px 8px;
+    font-size: 14px;
+    font-family: Microsoft Yahei, sans-serif, Arial;
+    color: #76838f;
+    background: #f0f3f4;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transition: height .3s;
+    overflow: hidden;
+    z-index: 1000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    // &.more {
+    //     height: 501px;
+    // }
+    .eqc-default-color {
+        width: 278px;
+        ul {
+            padding: 4px;
+        }
+        li {
+            width: 27px;
+            height: 27px;
+            // margin-left: 2px;
+            display: inline-block;
+            cursor: pointer;
+            // border: 1px solid #ccd5db;
+            vertical-align: top;
+            transition: transform .1s;
+        }
+        li:hover {
+            // border: 1px solid #a3afb7;
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+        // .select {
+        //     li:nth-child(10n+1) {
+        //         margin-left: 10px;
+        //     }
+        // }
+        .history {
+            ul {
+                margin: 4px;
+                padding: 10px 0;
+                border-top: 1px solid #ccd5db;
+                border-bottom: 1px solid #ccd5db;
+            }
+            .more {
+                width: 81px;
+                height: 27px;
+                font-size: 14px;
+                line-height: 27px;
+                display: inline-block;
+            }
+        }
+        .clear {
+            background: url("../img/bootstrap-colorpicker/alpha.png");
+            background-position: 0 100%;
+            // div {
+            //     width: 35px;
+            //     border-bottom: 1px solid #e06666;
+            //     transform: translate(-5px,13px) rotate(-45deg);
+            // }
+        }
+        .selected {
+            line-height: 16px;
+            text-align: center;
+            transform: scale(.8);
+            transform-origin: left;
+        }
+        input {
+            position: absolute;
+            bottom: 15px;
+            height: 28px;
+            width: 256px;
+            margin-left: 4px;
+            padding: 0 6px;
+            color: #a3afb7;
+            background: #fff;
+            border: 1px solid #ccd5db;
+        }
+    }
+}

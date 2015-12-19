@@ -1,0 +1,16 @@
+<div class="eqc-color" ng-click="selectColor($event)">
+    <div class="select">
+        <ul>
+            <li ng-repeat="color in greyColors" ng-style="{backgroundColor: '#' + color}" color="{{color}}"></li>
+            <li class="clear"></li>
+            <li ng-repeat="color in richColors" ng-style="{backgroundColor: '#' + color}" color="{{color}}"></li>
+        </ul>
+    </div>
+    <div class="history">
+        <ul>
+            <div class="more">最近使用</div>
+            <li ng-repeat="color in historyColors" ng-style="{backgroundColor: '#' + color}" color="{{color}}"></li>
+        </ul>
+    </div>
+    <input eqd-color-more />
+</div>
